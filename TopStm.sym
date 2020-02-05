@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# TopStm
+#
+DEF TopStm U 0 40 Y Y 1 F N
+F0 "U" -100 200 50 H V C CNN
+F1 "TopStm" -100 -150 50 H V C CNN
+F2 "" -50 0 50 H I C CNN
+F3 "" -50 0 50 H I C CNN
+DRAW
+S 400 -100 -600 150 0 1 0 N
+X 5vSTM ~ -800 -50 200 R 50 50 1 1 I
+X canRX ~ 600 100 200 L 50 50 1 1 I
+X canTX ~ 600 -50 200 L 50 50 1 1 I
+X GNDSTM ~ -800 100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
