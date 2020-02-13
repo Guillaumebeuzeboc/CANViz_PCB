@@ -13,58 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Conn_01x32_Female J1
-U 1 1 5E3AAD21
-P 2950 4300
-F 0 "J1" H 2978 4276 50  0000 L CNN
-F 1 "Conn_01x32_Female" H 2978 4185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x32_P2.54mm_Vertical" H 2950 4300 50  0001 C CNN
-F 3 "~" H 2950 4300 50  0001 C CNN
-	1    2950 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x32_Female J2
-U 1 1 5E3AF919
-P 4200 4300
-F 0 "J2" H 4228 4276 50  0000 L CNN
-F 1 "Conn_01x32_Female" H 4228 4185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x32_P2.54mm_Vertical" H 4200 4300 50  0001 C CNN
-F 3 "~" H 4200 4300 50  0001 C CNN
-	1    4200 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x32_Female J4
-U 1 1 5E3B341A
-P 6900 4300
-F 0 "J4" H 6928 4276 50  0000 L CNN
-F 1 "Conn_01x32_Female" H 6928 4185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x32_P2.54mm_Vertical" H 6900 4300 50  0001 C CNN
-F 3 "~" H 6900 4300 50  0001 C CNN
-	1    6900 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x32_Female J5
-U 1 1 5E3B7068
-P 8100 4300
-F 0 "J5" H 8128 4276 50  0000 L CNN
-F 1 "Conn_01x32_Female" H 8128 4185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x32_P2.54mm_Vertical" H 8100 4300 50  0001 C CNN
-F 3 "~" H 8100 4300 50  0001 C CNN
-	1    8100 4300
-	1    0    0    -1  
-$EndComp
-Text GLabel 6700 5200 0    50   Input ~ 0
-PB13
-Text GLabel 7900 5200 0    50   Input ~ 0
+Text GLabel 4850 3600 3    50   Input ~ 0
 PB12
-Text GLabel 2750 2800 0    50   Input ~ 0
-+5V_STM
-Text GLabel 2750 5900 0    50   Input ~ 0
-GND_STM
 Text GLabel 1600 950  1    50   Input ~ 0
 +5V_STM
 Text GLabel 1100 1250 0    50   Input ~ 0
@@ -105,4 +55,54 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 1600 1350 50 
 	1    1600 1350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5E4756EE
+P 2700 2250
+F 0 "J1" H 2728 2226 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2728 2135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2700 2250 50  0001 C CNN
+F 3 "~" H 2700 2250 50  0001 C CNN
+	1    2700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5E48015E
+P 4750 2300
+F 0 "J4" H 4778 2276 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4778 2185 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4750 2300 50  0001 C CNN
+F 3 "~" H 4750 2300 50  0001 C CNN
+	1    4750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 5E483C82
+P 2850 4050
+F 0 "J2" H 2878 4026 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2878 3935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2850 4050 50  0001 C CNN
+F 3 "~" H 2850 4050 50  0001 C CNN
+	1    2850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5E48A586
+P 4750 3400
+F 0 "J5" V 4688 3212 50  0000 R CNN
+F 1 "Conn_01x02_Female" V 4597 3212 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4750 3400 50  0001 C CNN
+F 3 "~" H 4750 3400 50  0001 C CNN
+	1    4750 3400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2500 2250 0    50   Input ~ 0
++5V_STM
+Text GLabel 2650 4150 0    50   Input ~ 0
+GND_STM
+Text GLabel 4750 3600 3    50   Input ~ 0
+PB13
 $EndSCHEMATC
