@@ -1,0 +1,4 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J3";"DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm";1;"DB9_Male";;;
+2;"U1";"SOIC-8_3.9x4.9mm_P1.27mm";1;"MCP2551-I-SN";;;
+3;"J1,J2,J4,J5";"PinSocket_1x02_P2.54mm_Vertical";4;"Conn_01x02_Female";;;
