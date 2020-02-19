@@ -29,17 +29,6 @@ Text GLabel 2100 1250 2    50   Input ~ 0
 canH
 Text GLabel 2100 1450 2    50   Input ~ 0
 canL
-$Comp
-L Connector:DB9_Male J3
-U 1 1 5E492897
-P 5850 1350
-F 0 "J3" H 6030 1396 50  0000 L CNN
-F 1 "DB9_Male" H 6030 1305 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 5850 1350 50  0001 C CNN
-F 3 " ~" H 5850 1350 50  0001 C CNN
-	1    5850 1350
-	1    0    0    -1  
-$EndComp
 Text GLabel 5550 1450 0    50   Input ~ 0
 canH
 Text GLabel 5550 1550 0    50   Input ~ 0
@@ -105,4 +94,15 @@ Text GLabel 2650 4150 0    50   Input ~ 0
 GND_STM
 Text GLabel 4750 3600 3    50   Input ~ 0
 PB13
+$Comp
+L Connector:DB9_Male J3
+U 1 1 5E492897
+P 5850 1350
+F 0 "J3" H 6030 1396 50  0000 L CNN
+F 1 "DB9_Male" H 6030 1305 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 5850 1350 50  0001 C CNN
+F 3 " ~" H 5850 1350 50  0001 C CNN
+	1    5850 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
