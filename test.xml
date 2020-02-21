@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/guillaume/Documents/CanViz/test/test.sch</source>
-    <date>mer. 19 févr. 2020 17:32:59 CET</date>
+    <date>ven. 21 févr. 2020 19:46:49 CET</date>
     <tool>Eeschema 5.1.5-52549c5~84~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -19,14 +19,6 @@
     </sheet>
   </design>
   <components>
-    <comp ref="U1">
-      <value>MCP2551-I-SN</value>
-      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
-      <datasheet>http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf</datasheet>
-      <libsource lib="Interface_CAN_LIN" part="MCP2551-I-SN" description="High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5E4B67C7</tstamp>
-    </comp>
     <comp ref="J1">
       <value>Conn_01x02_Female</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
@@ -67,6 +59,14 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E492897</tstamp>
     </comp>
+    <comp ref="U1">
+      <value>MCP2551-I-P</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf</datasheet>
+      <libsource lib="Interface_CAN_LIN" part="MCP2551-I-P" description="High-Speed CAN Transceiver, 1Mbps, 5V supply, PDIP8 package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E503F33</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Connector" part="Conn_01x02_Female">
@@ -106,16 +106,16 @@
         <pin num="9" name="9" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Interface_CAN_LIN" part="MCP2551-I-SN">
-      <description>High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package</description>
+    <libpart lib="Interface_CAN_LIN" part="MCP2551-I-P">
+      <description>High-Speed CAN Transceiver, 1Mbps, 5V supply, PDIP8 package</description>
       <docs>http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf</docs>
       <footprints>
-        <fp>SOIC*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">MCP2551-I-SN</field>
-        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Value">MCP2551-I-P</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
       </fields>
       <pins>
         <pin num="1" name="TXD" type="input"/>
@@ -138,66 +138,66 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(J3-Pad1)">
-      <node ref="J3" pin="1"/>
-    </net>
-    <net code="2" name="Net-(J4-Pad1)">
-      <node ref="J4" pin="1"/>
-    </net>
-    <net code="3" name="Net-(J4-Pad2)">
-      <node ref="J4" pin="2"/>
-    </net>
-    <net code="4" name="Net-(J2-Pad1)">
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="5" name="GND_STM">
-      <node ref="J2" pin="2"/>
-      <node ref="U1" pin="8"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="6" name="PB13">
-      <node ref="U1" pin="1"/>
-      <node ref="J5" pin="1"/>
-    </net>
-    <net code="7" name="Net-(J1-Pad2)">
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="8" name="Net-(J3-Pad3)">
-      <node ref="J3" pin="3"/>
-    </net>
-    <net code="9" name="Net-(J3-Pad4)">
-      <node ref="J3" pin="4"/>
-    </net>
-    <net code="10" name="Net-(J3-Pad5)">
-      <node ref="J3" pin="5"/>
-    </net>
-    <net code="11" name="Net-(J3-Pad6)">
-      <node ref="J3" pin="6"/>
-    </net>
-    <net code="12" name="Net-(J3-Pad8)">
-      <node ref="J3" pin="8"/>
-    </net>
-    <net code="13" name="Net-(J3-Pad9)">
+    <net code="1" name="Net-(J3-Pad9)">
       <node ref="J3" pin="9"/>
     </net>
-    <net code="14" name="PB12">
+    <net code="2" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="3" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="4" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="5" name="Net-(J3-Pad5)">
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="6" name="Net-(J3-Pad6)">
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="7" name="Net-(J3-Pad8)">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="8" name="+5V_STM">
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="9" name="PB12">
       <node ref="J5" pin="2"/>
       <node ref="U1" pin="4"/>
     </net>
-    <net code="15" name="Net-(U1-Pad5)">
+    <net code="10" name="Net-(U1-Pad5)">
       <node ref="U1" pin="5"/>
     </net>
-    <net code="16" name="canL">
-      <node ref="J3" pin="2"/>
+    <net code="11" name="canL">
       <node ref="U1" pin="6"/>
+      <node ref="J3" pin="2"/>
     </net>
-    <net code="17" name="canH">
+    <net code="12" name="canH">
       <node ref="U1" pin="7"/>
       <node ref="J3" pin="7"/>
     </net>
-    <net code="18" name="+5V_STM">
-      <node ref="U1" pin="3"/>
-      <node ref="J1" pin="1"/>
+    <net code="13" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="14" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="15" name="Net-(J4-Pad2)">
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="16" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="17" name="GND_STM">
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="18" name="PB13">
+      <node ref="J5" pin="1"/>
+      <node ref="U1" pin="1"/>
     </net>
   </nets>
 </export>
