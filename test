@@ -1,0 +1,16 @@
+Source,/home/guillaume/Documents/CanViz/test/test.sch
+Kicad Rev,Eeschema 5.1.5-52549c5~84~ubuntu18.04.1
+Generated Date,ven. 21 févr. 2020 19:46:49 CET
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+J1,Conn_01x02_Female,Connector,Conn_01x02_Female
+J4,Conn_01x02_Female,Connector,Conn_01x02_Female
+J2,Conn_01x02_Female,Connector,Conn_01x02_Female
+J5,Conn_01x02_Female,Connector,Conn_01x02_Female
+J3,DB9_Male,Connector,DB9_Male
+U1,MCP2551-I-P,Interface_CAN_LIN,MCP2551-I-P
